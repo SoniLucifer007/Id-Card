@@ -7,6 +7,7 @@
 
   <link rel="icon" type="image/png" href="logo-top.png  ">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="Cache-Control" content="no-store" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
@@ -145,6 +146,62 @@
       height: 10px;
       background: linear-gradient(135deg, #1f5fa3 50%, #e2a16d 50%);
     }
+
+    /* ===========================
+   MOBILE FULL SCREEN SUPPORT
+=========================== */
+
+@media (max-width: 768px) {
+
+  body {
+    margin: 0;
+    height: 100vh;
+    align-items: stretch;
+  }
+
+  .id-card {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    border-width: 4px;
+    box-shadow: none;
+  }
+
+  .card-header h2 {
+    font-size: 26px;
+  }
+
+  .institute {
+    font-size: 16px;
+  }
+
+  .photo-box img {
+    width: 150px;
+    height: 180px;
+  }
+
+  .student-info h3 {
+    font-size: 22px;
+  }
+
+  .student-info p {
+    font-size: 18px;
+  }
+
+  #qrcode img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .signature p {
+    font-size: 14px;
+  }
+
+  .footer-design {
+    width: 100vw;
+  }
+}
+
   </style>
 </head>
 
